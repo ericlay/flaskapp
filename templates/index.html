@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'infoGrabber.js') }}"></script>
+        <title>TEST PAGE</title>
+    </head>
+    <body>
+        <h1>Tweet to tell someone they're the worst!</h1>
+
+    <form>
+        <p>Would you like to add your twitter handle?
+            <br />
+            <input type="checkbox" name="addHandle" class="form-control handleAdd" /> Yes, please include my twitter handle
+        </p>
+    </form>
+    <form>
+        <p>Twitter Handle:
+            <input type="handle" id="handle" class="form-control" size="16" maxlength="50" placeholder="@" />
+        </p>
+    </form>
+        <button class="btn btn-lg btn-primary btn-block" type="button">Tweet!</button>
+    </body>
+</html>
